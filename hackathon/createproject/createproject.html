@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database-compat.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCpuLUlfrvUPc431WumRk3MRFTKKl1uxl8",
+            authDomain: "userprofil-9c6bd.firebaseapp.com",
+            projectId: "userprofil-9c6bd",
+            storageBucket: "userprofil-9c6bd.appspot.com",
+            messagingSenderId: "839564141767",
+            appId: "1:839564141767:web:88c4609725ec300b8d0ae2"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>Your Webpage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Project Hub</div>
+            <ul class="navigation">
+                <li><a href="..\index\index.html">All Projects</a></li>
+                <li><a href="..\createproject\createproject.html">Create Project</a></li>
+                <li><a href="..\myprojectpage\myprojects.html">My Projects</a></li>
+                <li><a href="..\my_profilepage\myprofilepage.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="app-container">
+        <div id="app-header">
+            <h1>Project</h1>
+        </div>
+        <div id="app-content">
+            <div class="form-container">
+                <label for="name">Project Name</label>
+                <input type="text" id="name" placeholder="Enter your Project Name">
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter your description" rows="2"></textarea>
+
+                <label for="domain">Domain</label>
+                <input type="text" id="domain" placeholder="Enter your Project domain">
+
+                <label for="days">Deadline</label>
+                <input type="date" id="days" placeholder="Enter the time limit of the project in days">
+
+                <label for="moredetails">More Details</label>
+                <textarea id="moredetails" placeholder="Enter other details" rows="4"></textarea>
+
+                <button id="submit-button">Submit</button>
+            </div>
+            <div class="card-container" id="card-container">
+                <!-- Cards will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

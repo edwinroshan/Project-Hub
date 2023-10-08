@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database-compat.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBOvwYANGNXxgG1gd_Qkfu2lIS24dTUHmU",
+            authDomain: "aaaa-a4475.firebaseapp.com",
+            databaseURL: "https://aaaa-a4475-default-rtdb.firebaseio.com",
+            projectId: "aaaa-a4475",
+            storageBucket: "aaaa-a4475.appspot.com",
+            messagingSenderId: "1078101516739",
+            appId: "1:1078101516739:web:8d1c506f7489693ae79d76"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    
+    <title>Your Webpage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Project Hub</div>
+            <ul class="navigation">
+                <li><a href="..\index\index.html">All Projects</a></li>
+                <li><a href="..\createproject\createproject.html">Create Project</a></li>
+                <li><a href="..\myprojectpage\myprojects.html">My Projects</a></li>
+                <li><a href="..\my_profilepage\myprofilepage.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="app-container">
+        <div id="app-header">
+            <h1>User Profile</h1>
+        </div>
+        <div id="app-content">
+            <div class="form-container">
+                <label for="name">Name</label>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <label for="skills">Skills</label>
+                <input type="text" id="skillsInput" placeholder="Enter your skills">
+                <br>
+                <label for="experience">Experience</label>
+                <input type="text" id="experienceInput" placeholder="Previous projects">
+                <br>
+                <label for="interest">Field of interest</label>
+                <input type="text" id="interestInput" placeholder="Field of interest">
+                <br>
+                <label for="location">Location</label>
+                <input type="text" id="locationInput" placeholder="Current Location">
+                <br>
+                <label for="language">Language</label>
+                <input type="text" id="languageInput" placeholder="one or more">
+                
+                
+                <input onclick="change()" type="button" value="Submit" id="submit-button"></input>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+<
+</html>
